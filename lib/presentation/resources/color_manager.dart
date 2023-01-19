@@ -28,4 +28,6 @@ class ColorManager {
   static const Color magnetaContainerBG = Color(0xff9b59b6);
 
   static const Color white = Color(0xffffffff);
+  static const Color lightGrey = Color(0xffdfe6e9);
+  static const Color darkGrey = Color(0xff636e72);
 }

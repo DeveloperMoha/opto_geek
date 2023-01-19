@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:opto_geek/presentation/resources/color_manager.dart';
 import 'package:opto_geek/presentation/resources/font_manager.dart';

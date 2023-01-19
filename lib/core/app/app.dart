@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       scrollBehavior: MyCustomScrollBehavior(),
-      initialRoute: Routes.homeRoute,
+      initialRoute: Routes.accirityTestsRoute,
       onGenerateRoute: RouteGenerator.getRoute,
     );
   }

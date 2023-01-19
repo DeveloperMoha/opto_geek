@@ -4,4 +4,9 @@ class ImageManager {
   static const String splashBG1 = "$mainImgPath/splash_1.jpg";
   static const String splashBG2 = "$mainImgPath/splash_2.jpg";
   static const String splashBG3 = "$mainImgPath/splash_3.jpg";
+
+  //============================accurity chart test images
+  static const accurityImgPath = "assets/images/accuritytests";
+  static const String svgC = "$accurityImgPath/c_alphabet_icon.svg";
+  static const String svgE = "$accurityImgPath/e_alphabet_icon.svg";
 }

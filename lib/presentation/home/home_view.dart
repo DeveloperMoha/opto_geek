@@ -8,7 +8,7 @@ import 'package:fire_tv_listener/fire_tv_listener.dart';
 import '../resources/string_manager.dart';
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
