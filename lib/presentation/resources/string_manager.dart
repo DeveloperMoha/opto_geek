@@ -37,6 +37,8 @@ class StringManager {
 
   static const String cChartTitle = "C Chart";
   static const String eChartTitle = "E Chart";
+  static const String numeralChartTitle = "Numeral Chart";
+  static const String alphapeticalChartTitle = "Alphapetical Chart";
   static const String visualAcurityTestTitle = "Visual Acurity Tests";
 
   static const String visualAcurityRowCount = "Rows \nCount";

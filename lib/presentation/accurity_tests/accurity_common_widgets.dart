@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:opto_geek/data/repository/accurity_test_repos/alphapetchart_repository_impl.dart';
 import 'package:opto_geek/data/repository/accurity_test_repos/cchart_repository_impl.dart';
+import 'package:opto_geek/data/repository/accurity_test_repos/numeralchart_repository_impl.dart';
+import 'package:opto_geek/data/repository/accurity_test_repos/pediatric_repository_impl.dart';
 import 'package:opto_geek/domain/entity/accurity_entity.dart';
 import 'package:opto_geek/domain/repository/accurity_repository.dart';
 import 'package:opto_geek/domain/usecases/accurity_tests_usecases.dart';
@@ -55,8 +58,16 @@ Widget showAcurityBottomItem(
 BaseAccurityTestsRepository setChart(index) {
   if (index == 0) {
     return CChartTest();
-  } else {
+  } else if (index == 1) {
     return EChartTest();
+  } else if (index == 2) {
+    return NumeralChart();
+  } else if (index == 3) {
+    return AlphapeticChart();
+  } else if (index == 4) {
+    return PediatricChart();
+  } else {
+    return CChartTest();
   }
 }
 
@@ -76,8 +87,8 @@ Widget showAccuritytestBody(AccurityModel accurityModel, mediaQueryWidth,
         child: GridView.count(
       primary: false,
       padding: const EdgeInsets.all(1),
-      crossAxisSpacing: 5,
-      mainAxisSpacing: 5,
+      crossAxisSpacing: 10,
+      mainAxisSpacing: 10,
       crossAxisCount: accurityModel.noOfColumns,
       children: result.accurityItems,
     )),

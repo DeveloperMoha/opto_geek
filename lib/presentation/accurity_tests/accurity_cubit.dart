@@ -10,10 +10,6 @@ class AccurityCubit extends Cubit<AccurityStates> {
         "======Welcome col ${AppConstants.noOfColumns} row ${AppConstants.noOfRows}");
   }
 
-  test1() {
-    print("======Welcome test1");
-  }
-
   increaseRows() {
     if (AppConstants.noOfRows != 5) {
       AppConstants.noOfRows++;
