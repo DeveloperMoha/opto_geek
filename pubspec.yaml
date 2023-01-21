@@ -69,6 +69,7 @@ flutter:
     - assets/images/accuritytests/numeral/
     - assets/images/accuritytests/alphapet/
     - assets/images/accuritytests/pediatric/
+    - assets/images/accuritytests/lea/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -46,7 +46,7 @@ class _AccurityTestsState extends State<AccurityTests> {
                 children: [
                   SizedBox(
                     height:
-                        mediaQueryHeight * (4.5 / 6) + (mediaQueryWidth * .01),
+                        mediaQueryHeight * (4.2 / 6) + (mediaQueryWidth * .01),
                     child: Row(
                       children: [
                         Expanded(
@@ -105,8 +105,8 @@ class _AccurityTestsState extends State<AccurityTests> {
                                 child: Column(
                                   children: [
                                     showTitleText(StringManager.decimalVal,
-                                        textSize: 18.0),
-                                    showNormalText("00.00", textSize: 20.0),
+                                        textSize: 16.0),
+                                    showNormalText("00.00", textSize: 18.0),
                                   ],
                                 ),
                               ),
@@ -117,8 +117,8 @@ class _AccurityTestsState extends State<AccurityTests> {
                                 child: Column(
                                   children: [
                                     showTitleText(StringManager.snellenVal,
-                                        textSize: 18.0),
-                                    showNormalText("18/24", textSize: 20.0),
+                                        textSize: 16.0),
+                                    showNormalText("18/24", textSize: 18.0),
                                   ],
                                 ),
                               ),
@@ -129,8 +129,8 @@ class _AccurityTestsState extends State<AccurityTests> {
                                 child: Column(
                                   children: [
                                     showTitleText(StringManager.logMarVal,
-                                        textSize: 18.0),
-                                    showNormalText("00.45", textSize: 20.0),
+                                        textSize: 16.0),
+                                    showNormalText("00.45", textSize: 18.0),
                                   ],
                                 ),
                               ),

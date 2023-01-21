@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opto_geek/data/repository/accurity_test_repos/alphapetchart_repository_impl.dart';
 import 'package:opto_geek/data/repository/accurity_test_repos/cchart_repository_impl.dart';
+import 'package:opto_geek/data/repository/accurity_test_repos/leachart_repository_impl.dart';
 import 'package:opto_geek/data/repository/accurity_test_repos/numeralchart_repository_impl.dart';
 import 'package:opto_geek/data/repository/accurity_test_repos/pediatric_repository_impl.dart';
 import 'package:opto_geek/domain/entity/accurity_entity.dart';
@@ -14,17 +15,20 @@ import '../resources/common_widgets.dart';
 Widget showAcurityBottomItem(
     itemText, mediaQueryWidth, itemIcon1, itemIcon2, function1, function2) {
   return Container(
+    //color: Colors.deepOrange,
     height: double.infinity,
+    margin: const EdgeInsets.only(right: 1),
     //margin: EdgeInsets.only(right: mediaQueryWidth * .01),
-    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+    padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 3),
     child: Column(
       children: [
-        showTitleText(itemText, textSize: (10.0 + mediaQueryWidth * .003)),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        showTitleText(itemText, textSize: (8.0 + mediaQueryWidth * .003)),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(right: 5),
+            Container(
+              //color: Colors.blue,
+              padding: const EdgeInsets.all(0),
               child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.all(0),
@@ -66,6 +70,8 @@ BaseAccurityTestsRepository setChart(index) {
     return AlphapeticChart();
   } else if (index == 4) {
     return PediatricChart();
+  } else if (index == 5) {
+    return LEAChart();
   } else {
     return CChartTest();
   }

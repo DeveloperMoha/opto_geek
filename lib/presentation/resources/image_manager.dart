@@ -77,4 +77,33 @@ class ImageManager {
   static const String svgzebra = "$accurityPediatricImgPath/zebra.svg";
 
 //==================================****=====================================
+
+  static const accurityLEAImgPath = "assets/images/accuritytests/lea";
+  static const String svgyes = "$accurityLEAImgPath/yes.svg";
+  static const String svgbrain = "$accurityLEAImgPath/brain.svg";
+  static const String svgbycicle = "$accurityLEAImgPath/bycicle.svg";
+  static const String svgcar = "$accurityLEAImgPath/car.svg";
+  static const String svgcat1 = "$accurityLEAImgPath/cat1.svg";
+  static const String svgcheerful = "$accurityLEAImgPath/cheerful.svg";
+  static const String svgcubic = "$accurityLEAImgPath/cubic.svg";
+  static const String svgdiamond = "$accurityLEAImgPath/diamond.svg";
+  static const String svgfoot = "$accurityLEAImgPath/foot.svg";
+  static const String svggun = "$accurityLEAImgPath/gun.svg";
+  static const String svgheart = "$accurityLEAImgPath/heart.svg";
+  static const String svghome = "$accurityLEAImgPath/home.svg";
+  static const String svgmotorcycle = "$accurityLEAImgPath/motorcycle.svg";
+
+  static const String svgplane = "$accurityLEAImgPath/plane.svg";
+  static const String svgrectangle = "$accurityLEAImgPath/rectangle.svg";
+  static const String svgsexi = "$accurityLEAImgPath/sexi.svg";
+  static const String svgskelton = "$accurityLEAImgPath/skelton.svg";
+  static const String svgsolid_circle = "$accurityLEAImgPath/solid_circle.svg";
+  static const String svgsquare = "$accurityLEAImgPath/square.svg";
+  static const String svgstar = "$accurityLEAImgPath/star.svg";
+  static const String svgsun = "$accurityLEAImgPath/sun.svg";
+  static const String svgtaxi = "$accurityLEAImgPath/taxi.svg";
+  static const String svgtriangle = "$accurityLEAImgPath/triangle.svg";
+  static const String svgweapon = "$accurityLEAImgPath/weapon.svg";
+  static const String svgwifi = "$accurityLEAImgPath/wifi.svg";
+  static const String svgworld = "$accurityLEAImgPath/world.svg";
 }

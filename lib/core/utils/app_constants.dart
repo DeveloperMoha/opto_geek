@@ -14,7 +14,7 @@ class AppConstants {
     "Numeral Chart",
     "Alphapetical Chart",
     "Pediatric Chart",
-    "lEA Figure Chart",
+    "LEA Figure Chart",
   ];
   static int selectedChartIndex = 1;
   static const List<double> nintyAngles = [
@@ -117,5 +117,34 @@ class AppConstants {
     ImageManager.svgtiger,
     ImageManager.svgtree,
     ImageManager.svgzebra,
+  ];
+
+  static const List<String> LEAList = [
+    ImageManager.svgyes,
+    ImageManager.svgbrain,
+    ImageManager.svgbycicle,
+    ImageManager.svgcar,
+    ImageManager.svgcat1,
+    ImageManager.svgcheerful,
+    ImageManager.svgcubic,
+    ImageManager.svgdiamond,
+    ImageManager.svgfoot,
+    ImageManager.svggun,
+    ImageManager.svgheart,
+    ImageManager.svghome,
+    ImageManager.svgmotorcycle,
+    ImageManager.svgplane,
+    ImageManager.svgrectangle,
+    ImageManager.svgsexi,
+    ImageManager.svgskelton,
+    ImageManager.svgsolid_circle,
+    ImageManager.svgsquare,
+    ImageManager.svgstar,
+    ImageManager.svgsun,
+    ImageManager.svgtaxi,
+    ImageManager.svgtriangle,
+    ImageManager.svgweapon,
+    ImageManager.svgwifi,
+    ImageManager.svgworld,
   ];
 }
