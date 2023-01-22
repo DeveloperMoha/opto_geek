@@ -64,28 +64,20 @@ class _AccurityTestsState extends State<AccurityTests> {
                                 Expanded(
                                     child: Container(
                                         width: double.infinity,
-                                        child: Align(
-                                          alignment: Alignment.topCenter,
-                                          child: Center(
-                                            child: showAccuritytestBody(
-                                                AccurityModel(
-                                                    noOfColumns: AppConstants
-                                                        .noOfColumns,
-                                                    noOfRows:
-                                                        AppConstants.noOfRows,
-                                                    accurityFraction:
-                                                        AppConstants
-                                                            .itemDimInPx,
-                                                    itemDim: AppConstants
-                                                        .itemDimInPx,
-                                                    chartType: AppConstants
-                                                        .chartTypes[0]),
-                                                mediaQueryWidth,
-                                                mediaQueryHeight,
-                                                AppConstants
-                                                    .selectedChartIndex),
-                                          ),
-                                        ))),
+                                        child: showAccuritytestBody(
+                                            AccurityModel(
+                                                noOfColumns:
+                                                    AppConstants.noOfColumns,
+                                                noOfRows: AppConstants.noOfRows,
+                                                accurityFraction:
+                                                    AppConstants.itemDimInPx,
+                                                itemDim:
+                                                    AppConstants.itemDimInPx,
+                                                chartType:
+                                                    AppConstants.chartTypes[0]),
+                                            mediaQueryWidth,
+                                            mediaQueryHeight,
+                                            AppConstants.selectedChartIndex))),
                               ],
                             ),
                           ),
@@ -206,11 +198,17 @@ class _AccurityTestsState extends State<AccurityTests> {
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                showTitleText(
-                                    StringManager.visualAcurityrefresh,
-                                    textSize: (12.0 + mediaQueryWidth * .003)),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: showTitleText(
+                                      StringManager.visualAcurityrefresh,
+                                      textSize:
+                                          (12.0 + mediaQueryWidth * .003)),
+                                ),
                                 Container(
-                                  margin: const EdgeInsets.only(top: 13),
+                                  width: 20,
+                                  height: 20,
+                                  margin: const EdgeInsets.all(1),
                                   child: ElevatedButton(
                                       style: ElevatedButton.styleFrom(
                                           padding: const EdgeInsets.all(0),
@@ -220,7 +218,7 @@ class _AccurityTestsState extends State<AccurityTests> {
                                           foregroundColor:
                                               ColorManager.mainAppColor),
                                       onPressed: () {
-                                        cubitObject.test();
+                                        cubitObject.refreshAccurity();
                                       },
                                       child: const Icon(
                                         Icons.replay_circle_filled_outlined,

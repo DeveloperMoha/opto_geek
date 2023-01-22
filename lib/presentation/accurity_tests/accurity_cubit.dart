@@ -5,13 +5,13 @@ import 'package:opto_geek/presentation/accurity_tests/accurity_states.dart';
 class AccurityCubit extends Cubit<AccurityStates> {
   AccurityCubit(super.initialState);
 
-  test() {
-    print(
-        "======Welcome col ${AppConstants.noOfColumns} row ${AppConstants.noOfRows}");
+  refreshAccurity() {
+    print("===================test==============");
+    emit(NoOfRowsState(noOfRows: AppConstants.noOfRows));
   }
 
   increaseRows() {
-    if (AppConstants.noOfRows != 5) {
+    if (AppConstants.noOfRows < AppConstants.maxNoOfRows) {
       AppConstants.noOfRows++;
       print(AppConstants.noOfRows);
       emit(NoOfRowsState(noOfRows: AppConstants.noOfRows));
@@ -27,7 +27,7 @@ class AccurityCubit extends Cubit<AccurityStates> {
   }
 
   increaseColumns() {
-    if (AppConstants.noOfColumns != 8) {
+    if (AppConstants.noOfColumns < AppConstants.maxNoOfColumns) {
       AppConstants.noOfColumns++;
       print(AppConstants.noOfColumns);
       emit(NoOfColumnsState(noOfColumns: AppConstants.noOfColumns));

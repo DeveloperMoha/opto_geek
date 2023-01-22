@@ -20,6 +20,13 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const AccurityTests());
 
       default:
+        // return MaterialPageRoute(
+        //     builder: (_) => Scaffold(
+        //           appBar: AppBar(
+        //             title: const Text(""),
+        //           ),
+        //           body: const Center(child: Text("")),
+        //         ));
         return MaterialPageRoute(
             builder: (_) => Scaffold(
                   appBar: AppBar(

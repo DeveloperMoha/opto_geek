@@ -6,6 +6,8 @@ import 'package:opto_geek/presentation/resources/string_manager.dart';
 class AppConstants {
   static int noOfRows = 2;
   static int noOfColumns = 3;
+  static int maxNoOfRows = 10;
+  static int maxNoOfColumns = 10;
   static double itemDimInPx = 40.0; //
 
   static const List<String> chartTypes = [
@@ -16,7 +18,7 @@ class AppConstants {
     "Pediatric Chart",
     "LEA Figure Chart",
   ];
-  static int selectedChartIndex = 1;
+  static int selectedChartIndex = 0;
   static const List<double> nintyAngles = [
     math.pi / 2, // 270 degree
     -math.pi, // 180 degree
@@ -24,6 +26,7 @@ class AppConstants {
     math.pi / 2, // 270 degree
     math.pi, // 0 degree
   ];
+
   static const List<String> numeralList = [
     ImageManager.svg2,
     ImageManager.svg8,

@@ -41,9 +41,9 @@ class StringManager {
   static const String alphapeticalChartTitle = "Alphapetical Chart";
   static const String visualAcurityTestTitle = "Visual Acurity Tests";
 
-  static const String visualAcurityRowCount = "Rows Count";
-  static const String visualAcurityColumnsCount = "Columnss Count";
-  static const String visualAcurityChange = "Change Accurity";
-  static const String visualAcurityChangeChart = "Change Chart";
-  static const String visualAcurityrefresh = "Refresh";
+  static const String visualAcurityRowCount = "Rows \nCount";
+  static const String visualAcurityColumnsCount = "Columns \nCount";
+  static const String visualAcurityChange = "Change \nAccurity";
+  static const String visualAcurityChangeChart = "Change \nChart";
+  static const String visualAcurityrefresh = "Refresh \n";
 }

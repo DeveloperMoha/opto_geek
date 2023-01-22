@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:opto_geek/core/utils/app_constants.dart';
+import 'package:opto_geek/presentation/accurity_tests/accurity_tests_view.dart';
 import 'package:opto_geek/presentation/resources/color_manager.dart';
 import 'package:opto_geek/presentation/resources/font_manager.dart';
+import 'package:opto_geek/presentation/resources/routes_manager.dart';
 
 Widget showTitleText(
   text, {
@@ -51,14 +54,19 @@ Widget showVerticalSpace(value) {
   return SizedBox(height: value);
 }
 
-Widget showListViewItem(title, mediaQueryWidth, context, route, bgColor) {
+Widget showListViewItem(
+    title, mediaQueryWidth, context, route, bgColor, index) {
   return InkWell(
     onTap: () {
-      Navigator.pushReplacementNamed(context, route);
+      AppConstants.selectedChartIndex = index;
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const AccurityTests()),
+      );
     },
     child: Container(
-      width: 120.0 + (mediaQueryWidth * .05),
-      height: 80.0 + (mediaQueryWidth * .05),
+      width: 135.0 + (mediaQueryWidth * .05),
+      // height: 95.0 + (mediaQueryWidth * .05),
       margin: const EdgeInsets.only(right: 10),
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
@@ -66,7 +74,7 @@ Widget showListViewItem(title, mediaQueryWidth, context, route, bgColor) {
           border: Border.all(color: ColorManager.primaryBtnBG),
           borderRadius: BorderRadius.circular(15)),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             padding: const EdgeInsets.all(10),

@@ -1,9 +1,10 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:opto_geek/core/utils/app_constants.dart';
 import 'package:opto_geek/domain/entity/accurity_entity.dart';
 import 'package:opto_geek/domain/repository/accurity_repository.dart';
-import 'dart:math' as math;
 
 import 'package:opto_geek/presentation/resources/image_manager.dart';
 
@@ -15,6 +16,7 @@ class EChartTest implements BaseAccurityTestsRepository {
     int nosOfItems = accurityModel.noOfColumns * accurityModel.noOfRows;
 
     double itemDim = accurityModel.itemDim;
+    Random random = Random();
 
     print("e chart");
     List<Widget> itemImageList = [];
@@ -31,7 +33,9 @@ class EChartTest implements BaseAccurityTestsRepository {
           child: Align(
             alignment: Alignment.center,
             child: Transform.rotate(
-                angle: AppConstants.nintyAngles[angleIndex], child: svgImage),
+                angle: AppConstants.nintyAngles[
+                    random.nextInt(AppConstants.nintyAngles.length)],
+                child: svgImage),
           )));
       if (angleIndex == 4) {
         angleIndex = 0;
